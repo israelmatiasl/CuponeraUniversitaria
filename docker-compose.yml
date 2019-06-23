@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cuponerauniversitaria.api:
+    image: ${DOCKER_REGISTRY-}cuponerauniversitaria
+    build:
+      context: .
+      dockerfile: CuponeraUniversitaria.Api/Dockerfile
